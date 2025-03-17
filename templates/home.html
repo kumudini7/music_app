@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmNest</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/creator_dashboard.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <style>
+
+    
+        span {
+            color: white;
+            text-shadow: 0 0 10px rgb(66, 138, 255), 0 0 20px rgb(66, 138, 255), 0 0 30px rgb(66, 138, 255);
+            animation: glow 1.5s infinite alternate;
+        }
+    
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgb(66, 138, 255), 0 0 20px rgb(66, 138, 255), 0 0 30px rgb(66, 138, 255);
+            }
+            to {
+                text-shadow: 0 0 20px rgb(66, 138, 255), 0 0 30px rgb(66, 138, 255), 0 0 40px rgb(66, 138, 255);
+            }
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <!--NavBar-->
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <a class="logo" href="/">
+                    <i class="material-icons">music_note</i>
+                    <span class="logo-text">RhythmNest</span>
+                </a>
+                <span class="menu">
+                    <li><a href="/auth/register">Register</a></li>
+                    <li><a href="/auth/login">User Login</a></li>
+                    <li><a href="/auth/adminLogin">Admin Login</a></li>
+                </span>
+                <span class="logo menu-trigger hidden">
+                    <i class="material-icons">menu</i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-12">
+                <i class="home_logo material-icons" style="font-size: xx-large;">music_note</i>
+                <h1 class="title">RhythmNest</h1>
+               <b><em> <p class="description" style="max-width: 420px;">For Creators and Music Fans</p>
+                <p class="description" style="max-width: 420px;">Your Music, Your Mood, Your Way!</p>
+                <p class="description" style="max-width: 420px;">Press Play on Happiness!</p>
+                <p class="description" style="max-width: 420px;">Listen. Create. Connect!</p></em></b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bigButton">
+                <a href="/auth/login">
+                    <i class="material-icons">play_circle</i>
+                    <span class="button-text">Get Started</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <script type="text/javascript" src="../static/js/base.js"></script>
+</body>
+
+</html>
